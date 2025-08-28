@@ -1,57 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="./style/style.css">
-    
+    <link rel="stylesheet" href="./style/style.css" />
 
     <title>Hotline</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <!-- Nav bar-->
 
-    <section class="max-w-11/12 flex mx-auto flex-col md:flex-row  justify-between  items-center py-[28px] gap-5 ">
+    <section
+      class="w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center py-[28px] gap-5"
+    >
       <div class="flex md:gap-3">
-         <div class="">
-            <img src="./assets/logo.png" alt="" class="w-[50px] ">
+        <div class="">
+          <img src="./assets/logo.png" alt="" class="w-[50px]" />
         </div>
         <div>
-            <h3 class="text-[#006747] font-extrabold">Emergency <br>Service</h3>
+          <h3 class="text-[#006747] font-extrabold">Emergency <br />Service</h3>
         </div>
       </div>
 
-   
-        <div>
-            <ul class="flex gap-5">
-                <li class=" bg-[#41FF6B1A] flex justify-center items-center gap-2 w-[120px] h-[50px] rounded-[50px]"><span class="font-extrabold">0</span><img src="./assets/heart.png" alt="" class="w-[24px]"></li>
-                <li class=" bg-[#41FF6B1A] flex justify-center items-center gap-2 w-[120px] h-[50px] rounded-[50px]"><span class="font-extrabold">100</span><img src="./assets/coin.png" alt="" class="w-[24px]"></li>
-                <li class=" text-white     flex justify-center items-center gap-2 font-semibold bg-[#00A63E] w-[120px] h-[50px] rounded-[50px]"><span>0</span> Copy</li>
-            </ul>
-        </div>
-
+      <div>
+        <ul class="flex gap-5">
+          <li
+            class="bg-[#41FF6B1A] flex justify-center items-center gap-2 w-[120px] h-[50px] rounded-[50px]"
+          >
+            <span class="font-extrabold">0</span
+            ><img src="./assets/heart.png" alt="" class="w-[24px]" />
+          </li>
+          <li
+            class="bg-[#41FF6B1A] flex justify-center items-center gap-2 w-[120px] h-[50px] rounded-[50px]"
+          >
+            <span class="font-extrabold">100</span
+            ><img src="./assets/coin.png" alt="" class="w-[24px]" />
+          </li>
+          <li
+            class="text-white flex justify-center items-center gap-2 font-semibold bg-[#00A63E] w-[120px] h-[50px] rounded-[50px]"
+          >
+            <span>0</span> Copy
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Hero Section -->
 
-    <section class="w-full mx-auto   text-center py-[20px] flex-col justify-center items-center bg-gradient-to-r from-[rgba(1,50,35,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)]">
-        
-            <img src="./assets/logo-dark.png" alt="" class="w-[100px] mx-auto">
-  
-        <div class="hind-madurai  space-y-2">
-            <h1 class="text-[40px] font-bold">Emergency Service Directory</h1>
-            <p class="text-[20px] font-medium">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh </p>
-        </div>
-         
+    <section
+      class="w-full mx-auto text-center py-[20px] flex-col justify-center items-center bg-gradient-to-r from-[rgba(1,50,35,1)] via-[rgba(0,103,71,1)] to-[rgba(1,50,35,1)]"
+    >
+      <img src="./assets/logo-dark.png" alt="" class="w-[100px] mx-auto" />
+
+      <div class="space-y-2 hind-madurai">
+        <h1 class="text-[40px] font-bold text-white">
+          Emergency Service Directory
+        </h1>
+        <p class="text-[20px] font-medium text-white">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
     </section>
 
-    
-</body>
+    <!-- main section -->
+    <section class="bg-[#41FF6B1A]">
+      <div class="w-11/12 grid grid-cols-12 pt-20 gap-7 mx-auto">
+
+         <!-- left section -->
+       <div class="grid grid-cols-3 gap-6 col-span-9 ">
+          <!-- 1 no card -->
+          <div class=" bg-white rounded-lg shadow-md p-[32px]" >
+          <!-- topbar -->
+           <div class="flex justify-between items-center">
+             <div>
+              <P class="flex justify-center items-center p-3 bg-[rgba(255,227,226,1)] rounded-[16px]">
+                <img src="./assets/emergency.png" alt="" class="w-[32px]"/>
+              </P>
+            </div>
+
+            <div> 
+              <i class="fa-regular fa-heart"></i>
+           </div>
+           </div>
+         <!-- text section -->
+           <div class="mt-2">
+              <h1 class="font-bold text-2xl">N</h1>
+              <p class="text-gray-500 text-[18px]">N</p>
+              <p class="text-[32px] font-bold mt-[24px]">9</p>
+              <P class="bg-gray-300 w-[90px] rounded-[30px] flex justify-center items-center py-[7px] text-gray-500">
+                A
+              </P>
+           </div>
+           <div class="flex gap-2 w-full mt-[24px]">
+             <button class="flex-1 btn btn-active border-2 border-gray-500 text-gray-500 rounded-lg "><i class="fa-solid fa-copy mr-2"></i>Copy</button>
+             <button class="flex-1 btn btn-active rounded-lg bg-[rgba(0,166,62,1)] text-white "><i class="fa-solid fa-phone mr-2"></i>Call</button>
+           </div>
+        </div>
+        <!-- 2 no card -->
+          <div class=" bg-white rounded-lg shadow-md p-[32px]" >
+          <!-- topbar -->
+           <div class="flex justify-between items-center">
+             <div>
+              <P class="flex justify-center items-center p-3 bg-[rgba(255,227,226,1)] rounded-[16px]">
+                <img src="./assets/police.png" alt="" class="w-[32px]"/>
+              </P>
+            </div>
+
+            <div> 
+              <i class="fa-regular fa-heart"></i>
+           </div>
+           </div>
+         <!-- text section -->
+           <div class="mt-2">
+              <h1 class="font-bold text-2xl">P</h1>
+              <p class="text-gray-500 text-[18px]">P</p>
+              <p class="text-[32px] font-bold mt-[24px]">9</p>
+              <P class="bg-gray-300 w-[90px] rounded-[30px] flex justify-center items-center py-[7px] text-gray-500">
+                A
+              </P>
+           </div>
+           <div class="flex gap-2 w-full mt-[24px]">
+             <button class="flex-1 btn btn-active border-2 border-gray-500 text-gray-500 rounded-lg "><i class="fa-solid fa-copy mr-2"></i>Copy</button>
+             <button class="flex-1 btn btn-active rounded-lg bg-[rgba(0,166,62,1)] text-white "><i class="fa-solid fa-phone mr-2"></i>Call</button>
+           </div>
+        </div>
+        <!-- 3 no card -->
+           <div class=" bg-white rounded-lg shadow-md p-[32px]" >
+          <!-- topbar -->
+           <div class="flex justify-between items-center">
+             <div>
+              <P class="flex justify-center items-center p-3 bg-[rgba(255,227,226,1)] rounded-[16px]">
+                <img src="./assets/fire-service.png" alt="" class="w-[32px]"/>
+              </P>
+            </div>
+
+            <div> 
+              <i class="fa-regular fa-heart"></i>
+           </div>
+           </div>
+         <!-- text section -->
+           <div class="mt-2">
+              <h1 class="font-bold text-2xl">Fire Service Number</h1>
+              <p class="text-gray-500 text-[18px]">Fire Service</p>
+              <p class="text-[32px] font-bold mt-[24px]">999</p>
+              <P class="bg-gray-300 w-[90px] rounded-[30px] flex justify-center items-center py-[7px] text-gray-500">
+                Fire
+              </P>
+           </div>
+           <div class="flex gap-2 w-full mt-[24px]">
+             <button class="flex-1 btn btn-active border-2 border-gray-500 text-gray-500 rounded-lg "><i class="fa-solid fa-copy mr-2"></i>Copy</button>
+             <button class="flex-1 btn btn-active rounded-lg bg-[rgba(0,166,62,1)] text-white "><i class="fa-solid fa-phone mr-2"></i>Call</button>
+           </div>
+        </div>
+        <!-- 4 no card -->
+           <div class=" bg-white rounded-lg shadow-md p-[32px]" >
+          <!-- topbar -->
+           <div class="flex justify-between items-center">
+             <div>
+              <P class="flex justify-center items-center p-3 bg-[rgba(255,227,226,1)] rounded-[16px]">
+                <img src="./assets/ambulance.png" alt="" class="w-[32px]"/>
+              </P>
+            </div>
+
+            <div> 
+              <i class="fa-regular fa-heart"></i>
+           </div>
+           </div>
+         <!-- text section -->
+           <div class="mt-2">
+              <h1 class="font-bold text-2xl">A</h1>
+              <p class="text-gray-500 text-[18px]">A</p>
+              <p class="text-[32px] font-bold mt-[24px]">1</p>
+              <P class="bg-gray-300 w-[90px] rounded-[30px] flex justify-center items-center py-[7px] text-gray-500">
+                H
+              </P>
+           </div>
+           <div class="flex gap-2 w-full mt-[24px]">
+             <button class="flex-1 btn btn-active border-2 border-gray-500 text-gray-500 rounded-lg "><i class="fa-solid fa-copy mr-2"></i>Copy</button>
+             <button class="flex-1 btn btn-active rounded-lg bg-[rgba(0,166,62,1)] text-white "><i class="fa-solid fa-phone mr-2"></i>Call</button>
+           </div>
+        </div>
+        <!-- 5 no card -->
+           <div class=" bg-white rounded-lg shadow-md p-[32px]" >
+          <!-- topbar -->
+           <div class="flex justify-between items-center">
+             <div>
+              <P class="flex justify-center items-center p-3 bg-[rgba(255,227,226,1)] rounded-[16px]">
+                <img src="./assets/emergency.png" alt="" class="w-[32px]"/>
+              </P>
+            </div>
+
+            <div> 
+              <i class="fa-regular fa-heart"></i>
+           </div>
+           </div>
+         <!-- text section -->
+           <div class="mt-2">
+              <h1 class="font-bold text-2xl">W</h1>
+              <p class="text-gray-500 text-[18px]">W</p>
+              <p class="text-[32px] font-bold mt-[24px]">1</p>
+              <P class="bg-gray-300 w-[90px] rounded-[30px] flex justify-center items-center py-[7px] text-gray-500">
+                H
+              </P>
+           </div>
+           <div class="flex gap-2 w-full mt-[24px]">
+             <button class="flex-1 btn btn-active border-2 border-gray-500 text-gray-500 rounded-lg "><i class="fa-solid fa-copy mr-2"></i>Copy</button>
+             <button class="flex-1 btn btn-active rounded-lg bg-[rgba(0,166,62,1)] text-white "><i class="fa-solid fa-phone mr-2"></i>Call</button>
+           </div>
+        </div>
+        <!-- 6 no card -->
+           <div class=" bg-white rounded-lg shadow-md p-[32px]" >
+          <!-- topbar -->
+           <div class="flex justify-between items-center">
+             <div>
+              <P class="flex justify-center items-center p-3 bg-[rgba(255,227,226,1)] rounded-[16px]">
+                <img src="./assets/emergency.png" alt="" class="w-[32px]"/>
+              </P>
+            </div>
+
+            <div> 
+              <i class="fa-regular fa-heart"></i>
+           </div>
+           </div>
+         <!-- text section -->
+           <div class="mt-2">
+              <h1 class="font-bold text-2xl">A</h1>
+              <p class="text-gray-500 text-[18px]">A</p>
+              <p class="text-[32px] font-bold mt-[24px]">1</p>
+              <P class="bg-gray-300 w-[90px] rounded-[30px] flex justify-center items-center py-[7px] text-gray-500">
+                G
+              </P>
+           </div>
+           <div class="flex gap-2 w-full mt-[24px]">
+             <button class="flex-1 btn btn-active border-2 border-gray-500 text-gray-500 rounded-lg "><i class="fa-solid fa-copy mr-2"></i>Copy</button>
+             <button class="flex-1 btn btn-active rounded-lg bg-[rgba(0,166,62,1)] text-white "><i class="fa-solid fa-phone mr-2"></i>Call</button>
+           </div>
+           
+        </div>
+        <!-- 7 no card -->
+           <div class=" bg-white rounded-lg shadow-md p-[32px]" >
+          <!-- topbar -->
+           <div class="flex justify-between items-center">
+             <div>
+              <P class="flex justify-center items-center p-3 bg-[rgba(255,227,226,1)] rounded-[16px]">
+                <img src="./assets/emergency.png" alt="" class="w-[32px]"/>
+              </P>
+            </div>
+
+            <div> 
+              <i class="fa-regular fa-heart"></i>
+           </div>
+           </div>
+         <!-- text section -->
+           <div class="mt-2">
+              <h1 class="font-bold text-2xl">E</h1>
+              <p class="text-gray-500 text-[18px]">E</p>
+              <p class="text-[32px] font-bold mt-[24px]">1</p>
+              <P class="bg-gray-300 w-[90px] rounded-[30px] flex justify-center items-center py-[7px] text-gray-500">
+                E
+              </P>
+           </div>
+           <div class="flex gap-2 w-full mt-[24px]">
+             <button class="flex-1 btn btn-active border-2 border-gray-500 text-gray-500 rounded-lg "><i class="fa-solid fa-copy mr-2"></i>Copy</button>
+             <button class="flex-1 btn btn-active rounded-lg bg-[rgba(0,166,62,1)] text-white "><i class="fa-solid fa-phone mr-2"></i>Call</button>
+           </div>
+           
+        </div>
+        <!-- 8 no card -->
+           <div class=" bg-white rounded-lg shadow-md p-[32px]" >
+          <!-- topbar -->
+           <div class="flex justify-between items-center">
+             <div>
+              <P class="flex justify-center items-center p-3 bg-[rgba(255,227,226,1)] rounded-[16px]">
+                <img src="./assets/brac.png" alt="" class="w-[32px]"/>
+              </P>
+            </div>
+
+            <div> 
+              <i class="fa-regular fa-heart"></i>
+           </div>
+           </div>
+         <!-- text section -->
+           <div class="mt-2">
+              <h1 class="font-bold text-2xl">B</h1>
+              <p class="text-gray-500 text-[18px]">b</p>
+              <p class="text-[32px] font-bold mt-[24px]">1</p>
+              <P class="bg-gray-300 w-[90px] rounded-[30px] flex justify-center items-center py-[7px] text-gray-500">
+                N
+              </P>
+           </div>
+           <div class="flex gap-2 w-full mt-[24px]">
+             <button class="flex-1 btn btn-active border-2 border-gray-500 text-gray-500 rounded-lg "><i class="fa-solid fa-copy mr-2"></i>Copy</button>
+             <button class="flex-1 btn btn-active rounded-lg bg-[rgba(0,166,62,1)] text-white "><i class="fa-solid fa-phone mr-2"></i>Call</button>
+           </div>
+           
+        </div>
+        <!-- 9 no card -->
+           <div class=" bg-white rounded-lg shadow-md p-[32px]" >
+          <!-- topbar -->
+           <div class="flex justify-between items-center">
+             <div>
+              <P class="flex justify-center items-center p-3 bg-[rgba(255,227,226,1)] rounded-[16px]">
+                <img src="./assets/emergency.png" alt="" class="w-[32px]"/>
+              </P>
+            </div>
+
+            <div> 
+              <i class="fa-regular fa-heart"></i>
+           </div>
+           </div>
+         <!-- text section -->
+           <div class="mt-2">
+              <h1 class="font-bold text-2xl">B</h1>
+              <p class="text-gray-500 text-[18px]">B</p>
+              <p class="text-[32px] font-bold mt-[24px]">1</p>
+              <P class="bg-gray-300 w-[90px] rounded-[30px] flex justify-center items-center py-[7px] text-gray-500">
+                T
+              </P>
+           </div>
+           <div class="flex gap-2 w-full mt-[24px]">
+             <button class="flex-1 btn btn-active border-2 border-gray-500 text-gray-500 rounded-lg "><i class="fa-solid fa-copy mr-2"></i>Copy</button>
+             <button class="flex-1 btn btn-active rounded-lg bg-[rgba(0,166,62,1)] text-white "><i class="fa-solid fa-phone mr-2"></i>Call</button>
+           </div>
+           
+        </div>
+         
+         
+     </div>
+         <!-- right section -->
+        <div class="grid col-span-3 min-h-[600px] border-2 border-red-500">
+          <p>call history</p>
+        </div>
+   </div>   
+    </section>
+  </body>
 </html>
