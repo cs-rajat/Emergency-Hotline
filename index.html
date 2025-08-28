@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotline</title>
 
+      <!-- daisy ui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- font awesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -18,10 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="./style/style.css" />
-
-    <title>Hotline</title>
+      <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <!-- Nav bar-->
@@ -43,7 +44,7 @@
           <li
             class="bg-[#41FF6B1A] flex justify-center items-center gap-2 w-[120px] h-[50px] rounded-[50px]"
           >
-            <span class="font-extrabold">0</span
+            <span id="heart-count" class="font-extrabold">0</span
             ><img src="./assets/heart.png" alt="" class="w-[24px]" />
           </li>
           <li
@@ -99,7 +100,7 @@
             </div>
 
             <div> 
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-click"></i>
            </div>
            </div>
          <!-- text section -->
@@ -127,7 +128,7 @@
             </div>
 
             <div> 
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-click"></i>
            </div>
            </div>
          <!-- text section -->
@@ -155,7 +156,7 @@
             </div>
 
             <div> 
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-click"></i>
            </div>
            </div>
          <!-- text section -->
@@ -183,7 +184,7 @@
             </div>
 
             <div> 
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-click"></i>
            </div>
            </div>
          <!-- text section -->
@@ -211,7 +212,7 @@
             </div>
 
             <div> 
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-click"></i>
            </div>
            </div>
          <!-- text section -->
@@ -239,7 +240,7 @@
             </div>
 
             <div> 
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-click"></i>
            </div>
            </div>
          <!-- text section -->
@@ -268,7 +269,7 @@
             </div>
 
             <div> 
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-click"></i>
            </div>
            </div>
          <!-- text section -->
@@ -297,7 +298,7 @@
             </div>
 
             <div> 
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-click"></i>
            </div>
            </div>
          <!-- text section -->
@@ -326,7 +327,7 @@
             </div>
 
             <div> 
-              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart heart-click"></i>
            </div>
            </div>
          <!-- text section -->
@@ -381,5 +382,7 @@
    </div>   
    
     </section>
+  <script src="./index.js"></script>
+
   </body>
 </html>
