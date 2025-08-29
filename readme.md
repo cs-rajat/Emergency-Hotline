@@ -36,6 +36,7 @@
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
    
+  **Ans**
 -`preventDefault()` Stops Default browser action 
 -`stopPropagation()` Stops event from bubbling to parent elements.
 
