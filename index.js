@@ -19,18 +19,16 @@ const callBtn = document.querySelectorAll('.call-btn');
 const history = document.querySelector('.history-box');
 
 for(const button of callBtn){
-    button.addEventListener('click', function(){
-        
+    button.addEventListener('click', function(){        
     const card = button.closest('.card');
     const serviceName= card.querySelector('h1').innerText;
-
     const serviceNumber= card.querySelector('.number').innerText;
 
     if(coin<20){
-        alert('Not enough to make a call');
+        alert('❌Not enough coin to make a call');
         return;     
     }
-    alert(`Calling ${serviceName} -${serviceNumber}`);
+    alert(`Calling ${serviceName} ${serviceNumber}`);
     coin -= 20;
     coinCount.innerText=coin;
     
@@ -57,6 +55,34 @@ for(const button of callBtn){
     
     });
 }
+// clear button
+const clearBtn = document.getElementById('clear-btn');
+clearBtn.addEventListener('click', function(){
+    history.innerHTML='';
+})
+
+
+// copy function
+const copyCount= document.getElementById('copy-count')
+const copyBtn = document.querySelectorAll('.copy-btn')
+
+
+for(const btn of copyBtn){
+    btn.addEventListener('click', function(){
+    const card = btn.closest('.card');
+    const serviceName = card.querySelector('h1').innerText;
+    const serviceNumber= card.querySelector('.number').innerText;
+
+    navigator.clipboard.writeText(serviceNumber);
+    alert(`${serviceName} number ${serviceNumber} copied`)
+    copyCount.innerText= parseInt(copyCount.innerText)+1;
+    
+    })
+
+}
+
+
+
 
 
 
